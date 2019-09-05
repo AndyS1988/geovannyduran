@@ -1,0 +1,19 @@
+.gioGallery {
+	margin-top: 142px;
+	margin-bottom: 10px;
+	width: 95vw;
+}
+
+@media only screen and (max-height: 425px) {
+	.gioGallery {
+		margin-top: 115px;
+	}
+}
+
+.loading-msg > p {
+	background: transparent;
+	background: 
+		-webkit-linear-gradient(rgb(56, 148, 250), rgb(253, 66, 249));
+  		-webkit-background-clip: text;
+ 		-webkit-text-fill-color: transparent;
+}
