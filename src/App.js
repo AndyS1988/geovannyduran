@@ -49,8 +49,10 @@ class App extends Component {
 		return (
 			<div className="App">
 			<Helmet>
-                <meta charset="utf-8" />
-			    <meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta charset="utf-8" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title>Geovanny Duran</title>
+				<link rel="canonical" href="https://geovannyduran.com" />
 			    <meta property="site_name" content="Geovanny Duran" />
 			    <meta property="title" content="Geovanny Duran" />
 			    <meta property="url" content="https://www.geovannyduran.com" />
@@ -58,7 +60,6 @@ class App extends Component {
 			    <meta property="description" content="I'm a photographer, living life to the fullest and taking photos of it. Sports photography, fashion photography, street photography, portraits. Sport photos soccer, basketball, car, car racing" />
 			    <meta name="keywords" content="Geovanny Duran, photography, photographer, sports photographer, sport, basketball, soccer, cars, car racing, San Diego, LA, Los Angeles" />
 			    <meta name="author" content="Andrea Spaska-Cox" />
-                <link rel="canonical" href="https://geovannyduran.com" />
             </Helmet>
 			{ route === "main" ? (
 				<main>

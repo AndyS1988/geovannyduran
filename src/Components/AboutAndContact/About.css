@@ -13,19 +13,19 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
 	display: -ms-grid;
-   	display: grid;
-   	-ms-grid-columns: 1fr 2px 2fr;
-   	grid-template-columns: 1fr 2fr;
-   	-ms-grid-rows: 2fr 2px 1fr;
-   	grid-template-rows: 2fr 1fr;
-   	grid-template-areas: 
+  	display: grid;
+  	-ms-grid-columns: 1fr 2px 2fr;
+  	grid-template-columns: 1fr 2fr;
+  	-ms-grid-rows: 2fr 2px 1fr;
+  	grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
 		"img txt"
 		"contact contact";
-   	grid-gap: 2px;
-   	-webkit-box-align: center;
+  	grid-gap: 2px;
+  	-webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-   	justify-items: center; 
+  	justify-items: center;
 }
 
 .exit {
@@ -46,17 +46,24 @@
 	height: auto;
 	margin: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-ms-grid-row: 1;
+  	-ms-grid-column: 1;
 	grid-area: img;
 }
 
 .gridText{
 	max-width: 450px;
+	-ms-grid-row: 1;
+  	-ms-grid-column: 3;
 	grid-area: txt;
 	margin: 0 10px;
 }
 
 .gridContact {
 	width: 100%;
+	-ms-grid-row: 3;
+  	-ms-grid-column: 1;
+  	-ms-grid-column-span: 3;
 	grid-area: contact;
 }
 
@@ -97,7 +104,6 @@
 	#container {
 		height: 400px;
 	}
-
 	.about-section {
 		-ms-grid-columns: 1fr;
    	   	grid-template-columns: 1fr;
@@ -122,7 +128,6 @@
 		height: 225px;
 		top: 30%;
 	}	
-
 	.about-section {
 		-ms-grid-columns: 1fr 1fr;
    		grid-template-columns: 1fr 1fr;
@@ -132,7 +137,6 @@
      		"img contact"
      		"txt txt"
 	}
-
 	.gridImage {
 	max-width: 135px;
 	height: auto; 

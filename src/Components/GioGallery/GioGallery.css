@@ -12,6 +12,7 @@
 
 .loading-msg > p {
 	background: transparent;
+	background: -ms-linear-gradient(rgb(56, 148, 250), rgb(253, 66, 249)); 
 	background: 
 		-webkit-linear-gradient(rgb(56, 148, 250), rgb(253, 66, 249));
   		-webkit-background-clip: text;
