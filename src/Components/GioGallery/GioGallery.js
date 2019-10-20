@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { Helmet } from "react-helmet";
 import Gallery from "react-photo-gallery";
 import { debounce } from "./utils";
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -47,6 +48,9 @@ const GioGallery = () => {
 
   return (
     <div className="gioGallery">
+      <Helmet>
+            <title>Geovanny Duran Photo Gallery</title>
+        </Helmet>
       <Gallery photos={images} onClick={openLightbox} />
         <ModalGateway>
           {viewerIsOpen ? (

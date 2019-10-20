@@ -9,10 +9,18 @@
 }
 
 .navigation-bar {
-	display: flex;
 	height: 100%;
-	align-items: center;
 	padding: 0 1rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;	
 }
 
 .navigation-logo {
@@ -47,14 +55,17 @@ li p {
 		-webkit-linear-gradient(rgb(56, 148, 250), rgb(253, 66, 249));
   		-webkit-background-clip: text;
  		-webkit-text-fill-color: transparent;
+ 	-webkit-transition: all 0.5s linear;
+ 	-o-transition: all 0.5s linear;
  	transition: all 0.5s linear;
 }
 
 li p:hover {
+	-webkit-transform: scale(1.06);	
+	-ms-transform: scale(1.06);
 	transform: scale(1.06);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 @media only screen and (max-width: 675px) {
 	.navigation-logo {

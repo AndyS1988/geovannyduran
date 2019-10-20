@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from "react-helmet";
 import Welcome from './Components/Welcome/Welcome'; 
 import Navigation from './Components/Navigation/Navigation'; 
 import GioGallery from './Components/GioGallery/GioGallery'; 
@@ -47,6 +48,18 @@ class App extends Component {
 		const { route, condition } = this.state;
 		return (
 			<div className="App">
+			<Helmet>
+                <meta charset="utf-8" />
+			    <meta name="viewport" content="width=device-width, initial-scale=1" />
+			    <meta property="site_name" content="Geovanny Duran" />
+			    <meta property="title" content="Geovanny Duran" />
+			    <meta property="url" content="https://www.geovannyduran.com" />
+			    <meta property="type" content="website" />
+			    <meta property="description" content="I'm a photographer, living life to the fullest and taking photos of it. Sports photography, fashion photography, street photography, portraits. Sport photos soccer, basketball, car, car racing" />
+			    <meta name="keywords" content="Geovanny Duran, photography, photographer, sports photographer, sport, basketball, soccer, cars, car racing, San Diego, LA, Los Angeles" />
+			    <meta name="author" content="Andrea Spaska-Cox" />
+                <link rel="canonical" href="https://geovannyduran.com" />
+            </Helmet>
 			{ route === "main" ? (
 				<main>
 					<Navigation 

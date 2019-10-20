@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 import aboutPhoto from './about-photo-resized.jpg';
 import instagram from './instagram.png';
 import youtube from './youtube.png';
@@ -9,6 +10,9 @@ import './About.css';
 const About = ({ condition, handleClick ,handleKeyPressForNavigation }) => {
   return (
     <div id="container" className={condition ? "showOrHide shown" : "showOrHide hidden"}>
+        <Helmet>
+            <title>About Geovanny Duran</title>
+        </Helmet>
         <div className="about-section">
             <img 
                 className="exit" 

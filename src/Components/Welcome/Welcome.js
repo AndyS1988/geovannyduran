@@ -10,6 +10,8 @@ const Welcome = ({ handleKeyPressForWelcome, onRouteChange }) => {
         	</header>
         	<div className="buttons">
         		<a 
+                    role="button"
+                    aria-label="Open-Gallery"
                     onClick={() => onRouteChange("main")}
                     onKeyPress={handleKeyPressForWelcome} 
                     className="welcome-button bold-text" 
